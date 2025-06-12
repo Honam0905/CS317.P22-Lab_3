@@ -65,7 +65,7 @@ Repo này thuộc môn CS317.P22 (Phát triển và vận hành hệ thống má
    ```bash
    python scripts/traffic_gen.py
    ```
-   * Lưu ý khi chạy xong câu lệnh 7.2 khi bấm vào đường link 8.1 sẽ hiện ra lỗi phải mất một lúc thì mới kết nối được nên khi chạy xong 7.2 chờ đợi một lúc để local host nhận được tín hiệu trừ trường hợp mạng mạnh
+   * Lưu ý khi chạy xong câu lệnh 6.2 khi bấm vào đường link 8 sẽ hiện ra lỗi phải mất một lúc thì mới kết nối được nên khi chạy xong 6.2 chờ đợi một lúc để local host nhận được tín hiệu trừ trường hợp mạng mạnh
 8. Gọi API
    - HTML form: http://localhost:8000/  
    - Swagger UI:  http://localhost:8000/docs
