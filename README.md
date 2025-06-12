@@ -17,7 +17,7 @@ Repo này thuộc môn CS317.P22 (Phát triển và vận hành hệ thống má
 2. Clone repo:
    
    ```bash
-   git clone https://github.com/Honam0905/CS317.P22.git
+   git clone https://github.com/Honam0905/CS317.P22-Lab_3
    cd CS317.P22
    ```
 3. Kéo file nhị phân
@@ -39,7 +39,7 @@ Repo này thuộc môn CS317.P22 (Phát triển và vận hành hệ thống má
    ```
 6. Đóng gói & Deploy với Docker<br>
    ```bash
-   cd CS317.P22/bert_sentiment_analysis
+   cd CS317.P22-Lab_3/bert_sentiment_analysis
    ```
    6.1. Ở thư mục gốc, build image:
    
