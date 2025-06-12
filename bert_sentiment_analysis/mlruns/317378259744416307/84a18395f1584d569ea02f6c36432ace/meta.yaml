@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kiffaz/VSC/bert_sentiment_analysis/mlruns/317378259744416307/84a18395f1584d569ea02f6c36432ace/artifacts
+end_time: 1746892482265
+entry_point_name: ''
+experiment_id: '317378259744416307'
+lifecycle_stage: active
+run_id: 84a18395f1584d569ea02f6c36432ace
+run_name: stylish-doe-78
+run_uuid: 84a18395f1584d569ea02f6c36432ace
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746892451866
+status: 4
+tags: []
+user_id: kiffaz

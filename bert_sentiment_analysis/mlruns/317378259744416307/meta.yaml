@@ -1,0 +1,6 @@
+artifact_location: file:///home/kiffaz/VSC/bert_sentiment_analysis/mlruns/317378259744416307
+creation_time: 1746892451844
+experiment_id: '317378259744416307'
+last_update_time: 1746892451844
+lifecycle_stage: active
+name: bert-imdb

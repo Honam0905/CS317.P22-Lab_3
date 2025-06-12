@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kiffaz/VSC/bert_sentiment_analysis/mlruns/848080559603120574/0fda93b3ec824491a8463b3fead4a44c/artifacts
+end_time: 1746893841517
+entry_point_name: ''
+experiment_id: '848080559603120574'
+lifecycle_stage: active
+run_id: 0fda93b3ec824491a8463b3fead4a44c
+run_name: smiling-elk-843
+run_uuid: 0fda93b3ec824491a8463b3fead4a44c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746893841512
+status: 3
+tags: []
+user_id: kiffaz

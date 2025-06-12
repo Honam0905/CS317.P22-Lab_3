@@ -1,0 +1,24 @@
+groups:
+  - name: sentiment-api-alerts
+    rules:
+      - alert: HighErrorRate
+        expr: |
+          rate(predict_requests_total{status="error"}[2m])
+            /
+          rate(predict_requests_total[2m]) > 0.5
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Tỷ lệ lỗi cao (>50%) trên sentiment API"
+          description: "Tỷ lệ lỗi hiện tại vượt quá 50% trong vòng 2 phút qua."
+
+      - alert: LowConfidenceScore
+        expr: |
+          histogram_quantile(0.5, rate(prediction_confidence_score_bucket[5m])) < 0.6
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Confidence score thấp (<0.6)"
+          description: "Độ tự tin của mô hình đang ở mức thấp." 

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kiffaz/VSC/bert_sentiment_analysis/mlruns/317378259744416307/bd6e111306434dd197f9ef5bd2af3c74/artifacts
+end_time: 1746893308002
+entry_point_name: ''
+experiment_id: '317378259744416307'
+lifecycle_stage: active
+run_id: bd6e111306434dd197f9ef5bd2af3c74
+run_name: mercurial-swan-885
+run_uuid: bd6e111306434dd197f9ef5bd2af3c74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746892680375
+status: 3
+tags: []
+user_id: kiffaz

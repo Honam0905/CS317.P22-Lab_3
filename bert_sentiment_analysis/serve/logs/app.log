@@ -1,0 +1,4 @@
+2025-06-11 19:55:52,004 INFO Using checkpoint: /home/kiffaz/VSC/CS317.P22/bert_sentiment_analysis/output/bert_epoch2.pt
+2025-06-11 20:01:12,758 INFO Inference: label=positive, score=0.9979, text='this movie is so goo...'
+2025-06-11 20:01:35,851 INFO Inference: label=positive, score=0.9979, text=' This movie is so go...'
+2025-06-11 20:01:59,889 INFO Inference: label=negative, score=0.9853, text='this food is so bad...'

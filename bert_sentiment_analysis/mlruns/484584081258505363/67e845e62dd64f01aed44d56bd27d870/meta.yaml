@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kiffaz/VSC/bert_sentiment_analysis/mlruns/484584081258505363/67e845e62dd64f01aed44d56bd27d870/artifacts
+end_time: 1746892317107
+entry_point_name: ''
+experiment_id: '484584081258505363'
+lifecycle_stage: active
+run_id: 67e845e62dd64f01aed44d56bd27d870
+run_name: stately-elk-671
+run_uuid: 67e845e62dd64f01aed44d56bd27d870
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746892309921
+status: 4
+tags: []
+user_id: kiffaz

@@ -1,0 +1,110 @@
+auth_enabled: false
+
+server:
+  http_listen_port: 3100
+  grpc_listen_port: 9095
+
+common:
+  replication_factor: 1
+  ring:
+    kvstore:
+      store: inmemory
+
+schema_config:
+  configs:
+    - from: 2020-10-24
+      store: boltdb-shipper
+      object_store: filesystem
+      schema: v11
+      index:
+        prefix: index_
+        period: 24h
+
+compactor:
+  working_directory: /loki/compactor
+  shared_store: filesystem
+
+storage_config:
+  filesystem:
+    directory: /loki/chunks
+
+chunk_store_config:
+  max_look_back_period: 0s
+
+table_manager:
+  retention_period: 0s
+
+limits_config:
+  reject_old_samples: true
+  reject_old_samples_max_age: 168h
+
+# ingester:
+#   lifecycler:
+#     ring:
+#       kvstore:
+#         store: inmemory
+#     final_sleep: 0s
+
+# distributor:
+#   ring:
+#     kvstore:
+#       store: inmemory
+
+# # XÓA TỪ ĐÂY ĐẾN CUỐI FILE, KHÔNG CẦN block volumes 
+
+# clickhouse:
+#   image: clickhouse/clickhouse-server:23.3
+#   container_name: clickhouse
+#   volumes:
+#     - clickhouse_data:/var/lib/clickhouse
+#   ulimits:
+#     nofile:
+#       soft: 262144
+#       hard: 262144
+
+# zookeeper:
+#   image: zookeeper:3.8
+#   container_name: zookeeper
+
+# signoz-otel-collector:
+#   image: signoz/signoz-otel-collector:0.95.0
+#   container_name: otel-collector
+#   command: ["--config=/etc/otel-collector-config.yaml"]
+#   volumes:
+#     - ./monitoring/otel-collector-config.yaml:/etc/otel-collector-config.yaml:ro
+#   ports:
+#     - "4317:4317"        # OTLP gRPC
+#     - "4318:4318"        # OTLP HTTP
+#     - "9464:9464"        # Prometheus exporter
+
+# signoz-frontend:
+#   image: signoz/signoz-frontend:0.95.0
+#   container_name: signoz-frontend
+#   environment:
+#     - CLICKHOUSE_URL=http://clickhouse:8123
+#   depends_on:
+#     - clickhouse
+#   ports:
+#     - "3301:3301"
+
+# signoz-query-service:
+#   image: signoz/signoz-query-service:0.95.0
+#   container_name: signoz-query
+#   environment:
+#     - CLICKHOUSE_URL=tcp://clickhouse:9000?database=signoz
+#   depends_on:
+#     - clickhouse
+
+# volumes:
+#   prom_data:
+#   grafana_data:
+#   clickhouse_data:
+
+# filelog/docker:
+#   include: [/var/lib/docker/containers/*/*.log]
+#   operators:
+#     - type: json_parser
+#       parse_from: body
+
+# filelog/sys:
+#   include: [/var/log/syslog, /var/log/auth.log] 

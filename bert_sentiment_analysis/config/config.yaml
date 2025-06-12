@@ -1,0 +1,16 @@
+dataset:
+  name: imdb          # switch to the built-in imdb loader
+  val_split_size: 0.1 # fraction of train to hold out as validation
+
+model:
+  pretrained: bert-base-uncased
+  num_labels: 2       # imdb is binary
+
+training:
+  epochs:      3
+  batch_size:  16
+  lr:          2e-5
+  max_length:  128
+
+logging:
+  mlflow_experiment: bert-imdb
