@@ -61,16 +61,19 @@ Repo này thuộc môn CS317.P22 (Phát triển và vận hành hệ thống má
    ```bash
    docker logs <container-name>/<container-id>
    ```
-
+   6.5  giả lập traffic request
+   ```bash
+   python scripts/traffic_gen.py
+   ```
    * Lưu ý khi chạy xong câu lệnh 7.2 khi bấm vào đường link 8.1 sẽ hiện ra lỗi phải mất một lúc thì mới kết nối được nên khi chạy xong 7.2 chờ đợi một lúc để local host nhận được tín hiệu trừ trường hợp mạng mạnh
-7. Gọi API
+8. Gọi API
    - HTML form: http://localhost:8000/  
    - Swagger UI:  http://localhost:8000/docs
    - Prometheus: http://localhost:9090/
    - Grafana: http://localhost:3000/
    - Alertmanager: http://localhost:9093/
    - Node Exporter: http://localhost:9100/
-8. Video Demo
+9. Video Demo
 
 <p align="center">
   <a href="https://youtu.be/BaFtFba4yZE?si=yUXGAHsB6GEl7eA5" target="_blank">
